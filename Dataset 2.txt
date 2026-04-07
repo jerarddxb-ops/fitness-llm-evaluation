@@ -1,0 +1,272 @@
+LLM Evaluation Dataset 2
+Focus: Fitness domain (increased difficulty, rubric v2 applied)
+
+
+Task 1
+Prompt:
+Is eating late at night bad for fat loss?
+
+Response A:
+Eating late at night does not inherently cause fat gain. Fat loss is primarily determined by total daily calorie intake, not meal timing.
+
+Response B:
+Eating late at night is bad for fat loss because your metabolism slows down, causing food to be stored as fat.
+
+Response C:
+Eating late at night can sometimes lead to overeating, which may affect fat loss, but the timing itself is less important than total calorie intake.
+
+Best: A
+Ranking: A > C > B
+Confidence: 3
+
+Justification:
+A is the most succinct and helpful, stating that late night eating is not inherently bad for fat loss and caloric intake is more important. C is similarly accurate, however overeating is not properly explained and could lead to confusion. B makes a misleading claim that if metabolism slows down then food is stored as fat, which is not always true.
+
+Error type:
+B: Misleading causal claim and overgeneralization.
+
+Learning signal:
+Prefer responses that identify the nuanced relationship between variables rather implying certain variables are more important.
+
+
+Task 2
+Prompt:
+Do I need to feel a “burn” in my muscles for the workout to be effective?
+
+Response A:
+The “burn” is caused by metabolic byproducts and is not required for muscle growth. Effective training depends more on effort, volume, and progression.
+
+Response B:
+If you don’t feel the burn, your workout is not effective and you are not building muscle.
+
+Response C:
+Feeling a burn can indicate that your muscles are working, but it is not a reliable indicator of an effective workout.
+
+Best: A
+Ranking: A > C > B
+Confidence: 2
+
+Justification:
+A and C are very close, they both correctly state that the burn is not required for muscle growth/effective workout. However, A provides helpful guidance (effort, vol, progression) which C does not. Although C is more concise and clear, it is less helpful. B makes a misleading claim that unless you feel the burn your workout is not effective, which is not true.
+
+Error type:
+B: Misleading causal claim and overgeneralization.
+
+Learning signal:
+Prefer responses that provide guidance when a relationship is nuanced rather than oversimplifying.
+
+
+Task 3
+Prompt:
+Is walking enough to lose weight?
+
+Response A:
+Walking can contribute to weight loss if it helps create a calorie deficit, especially when combined with dietary control.
+
+Response B:
+Walking is not enough to lose weight. You need intense exercise like running or weightlifting.
+
+Response C:
+Walking is one of the best ways to lose weight because it burns fat directly and is easy to sustain.
+
+Best: A
+Ranking: A > C > B
+Confidence: 3
+
+Justification:
+A correctly states that walking can assist with weight loss if combined with dietary control, whereas C is misleading, implying that walking alone is enough for weight loss. B is overgeneralizing and misleading to suggest that walking is not enough for weight loss.
+
+Error type:
+B: Misleading causal claim and overgeneralization.
+
+Learning signal:
+Prefer responses that identify the critical variables in relationships rather than ignore them.
+
+
+Task 4
+Prompt:
+Should I avoid all sugar to be healthy?
+
+Response A:
+You don’t need to avoid all sugar to be healthy, but limiting added sugars is generally recommended for overall health.
+
+Response B:
+Yes, all sugar is unhealthy and should be completely eliminated from your diet.
+
+Response C:
+Sugar in excess can be harmful, but small amounts can be part of a balanced diet depending on overall intake.
+
+Best: A
+Ranking: A > C > B
+Confidence: 3
+
+Justification:
+A clearly answers the question stating that all sugars do not need to be avoided and mentions that added sugar is worse. C makes the same claim, without mentioning added sugar and is less clear: "depending on overall intake" is confusing. B incorrectly states that all sugar should be completely eliminated.
+
+Error type:
+B: False necessity claim
+
+Learning signal:
+Prefer responses that highlight sub-categories of something/object when helpful rather than oversimplifying.
+
+
+Task 5
+Prompt:
+Do I need supplements to recover properly from workouts?
+
+Response A:
+Most recovery needs can be met through proper nutrition, sleep, and hydration. Supplements may help in some cases but are not required.
+
+Response B:
+Supplements are necessary for recovery because food alone cannot provide everything your body needs after training.
+
+Response C:
+Supplements can support recovery, but they are secondary to factors like sleep, nutrition, and overall training load.
+
+Best: C
+Ranking: C > A > B
+Confidence: 3
+
+Justification:
+C correctly and concisely states that supplements are non-essential but helpful for recovery, while A may mislead the user into thinking that there is not strong evidence that supplements support recovery. B makes a false impossibility claim that supplements are required for proper recovery.
+
+Error type:
+B: False impossibility claim and overgeneralization
+
+Learning signal:
+Prefer responses that articulate the relationships between underlying factors in a mechanism rather than generalize or oversimplify.
+
+
+Task 6
+Prompt:
+Is it better to work out every day for faster results?
+
+Response A:
+Working out every day can be beneficial if managed properly, but recovery is essential. More is not always better, and overtraining can reduce progress.
+
+Response B:
+Working out every day is the fastest way to get results because more training always leads to faster progress.
+
+Response C:
+You don’t need to work out every day to see results. Consistency and recovery are both important.
+
+Best: A
+Ranking: A > C > B
+Confidence: 3
+
+Justification:
+A provides the most helpful and clear response, mentioning the trade-off between effectiveness and risk, while also tackling a common myth. C correctly states that daily workouts are non-essential but is less helpful because it fails to provide specific guidance. B makes a misleading claim that more training always results in faster results.
+
+Error type:
+B: Misleading causal claim
+
+Learning signal:
+Prefer responses that address common ideas/themes around a concept.
+
+
+Task 7
+Prompt:
+Do I need to drink protein shakes to build muscle?
+
+Response A:
+Protein shakes are not required if you meet your protein needs through whole foods.
+
+Response B:
+Protein shakes are essential for muscle growth because they provide nutrients that food cannot.
+
+Response C:
+Protein shakes can be a convenient way to increase protein intake, but they are not necessary if dietary intake is sufficient.
+
+Best: C
+Ranking: C > A > B
+Confidence: 3
+
+Justification:
+C and A correctly state that shakes are not required if diet is correct, however C is more helpful in explaining that protein shakes can be convenient. B makes unsupported claims that shakes provide additional nutrients and are essential for growth.
+
+Error type:
+B: False necessity claim
+
+Learning signal:
+Prefer responses that explain the link between two concepts in a mechanism rather than just stating facts.
+
+
+Task 8
+Prompt:
+Is sweating more a sign of a better workout?
+
+Response A:
+Sweating is related to temperature regulation, not workout effectiveness, and is not a reliable indicator of progress.
+
+Response B:
+The more you sweat, the more effective your workout is because it means you are burning more fat.
+
+Response C:
+Sweating can indicate effort, but it varies between individuals and is not a direct measure of workout quality.
+
+Best: A
+Ranking: A > C > B
+Confidence: 3
+
+Justification:
+A does a good job in dispelling the myth that sweating is related to effectiveness. C implies this but does not explicitly explain the mechanism. B supports the myth incorrectly.
+
+Error type:
+B: Multiple False claims
+
+Learning signal:
+Prefer responses that explain common misconceptions rather than skip over or support them.
+
+
+Task 9
+Prompt:
+Should I completely cut out carbs to lose weight?
+
+Response A:
+You do not need to eliminate carbohydrates to lose weight. Fat loss depends on maintaining a calorie deficit.
+
+Response B:
+Yes, cutting out carbs is necessary because carbohydrates cause fat gain.
+
+Response C:
+Reducing carbs can help some people control calorie intake, but they are not inherently fattening.
+
+Best: C
+Ranking: C > A > B
+Confidence: 3
+
+Justification:
+C is the most helpful because it explains that cutting carbs can assist with weight loss but is not essential. A does not mention the potential benefit of cutting carbs and is thus less helpful. B makes a misleading claim that carbs lead to fat gain.
+
+Error type:
+B: Misleading causal claim
+
+Learning signal:
+Prefer responses that address nuance in dichotomous questions rather than neglecting relationships not explicitly mentioned in the prompt.
+
+
+Task 10
+Prompt:
+Is it bad to miss one workout?
+
+Response A:
+Missing one workout will not significantly impact your progress. Long-term consistency matters more.
+
+Response B:
+Missing one workout can set you back significantly and slow your progress.
+
+Response C:
+It’s okay to miss a workout occasionally, especially if you need rest or recovery.
+
+Best: A
+Ranking: A > C > B
+Confidence: 3
+
+Justification:
+A is the most helpful to the user, explaining that long-term consistency is most important. C does not mention these additional factors and is also less clear. B makes an unsupported claim that missing one workout will significantly hinder progress.
+
+Error type:
+B: Misleading causal claim (overstated)
+
+Learning signal:
+Prefer responses that consider long-term impact over short-term, when appropriate.

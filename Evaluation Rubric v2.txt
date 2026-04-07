@@ -1,0 +1,133 @@
+Response Evaluation Rubric (V2)
+
+
+Rubric V1 – Common Errors
+	1	Confused weak vs misleading
+	2	Didn’t treat myths as high severity
+	3	Occasionally added personal expectations
+	4	Error types were sometimes too vague
+	5	Learning signals were too vague and generic
+
+V2 Updates
+	1	Updated evaluation principles (1, 4, 8)
+	2	Updated error types
+	3	Updated guidelines for learning signals
+
+
+
+1. Evaluation Principles
+	1	Correctness takes priority Responses that contain incorrect or misleading information should not be preferred, even if they are clear or well-written. Arguments that support myths are always worse than answers that are weak but factual.
+
+	2	Use comparative reasoning Justifications must explain rankings by comparing responses, not evaluating them in isolation.
+
+	3	Reference rubric criteria explicitly Each justification should reference at least two criteria (e.g., correctness, helpfulness, clarity, conciseness).
+
+	4	Avoid personal preference bias Evaluate based on usefulness to a general user, not personal writing style or subjective preference.Focus only on what is given in the response.
+
+	5	Prioritize user usefulness Select the response that would be most helpful to a typical user, even if it is not the most concise or stylistically polished.
+
+	6	Handle trade-offs explicitly When responses have strengths in different areas (e.g., clarity vs completeness), explicitly identify and weigh these trade-offs.
+
+	7	Conciseness is a secondary criterion Only use conciseness when correctness and helpfulness are comparable.
+
+	8	Weak ≠ incorrect or misleading Always distinguish between:
+	◦	Incorrect / misleading = factually wrong or implies a false conclusion
+	◦	Weak = vague or incomplete
+
+	9	Weak responses are preferred over misleading ones.
+
+
+
+2. Evaluation Criteria
+
+1. Correctness (Highest Priority)
+Definition: Is the information factually accurate and free from misleading or incorrect claims?
+Guide:
+	•	High = accurate, no misleading information
+	•	Medium = mostly correct, minor issues
+	•	Low = incorrect or misleading
+
+2. Helpfulness
+Definition: Does the response directly and effectively answer the user’s question?
+Guide:
+	•	High = clear, actionable, fully answers
+	•	Medium = partially helpful or incomplete
+	•	Low = vague, off-topic, or unhelpful
+
+3. Clarity
+Definition: Is the response easy to understand and well-structured?
+Guide:
+	•	High = clear, well-organized
+	•	Medium = understandable but slightly messy
+	•	Low = confusing or poorly structured
+
+4. Conciseness (Secondary)
+Definition: Is the response appropriately detailed without unnecessary length?
+Guide:
+	•	High = efficient, no fluff
+	•	Medium = slightly too long or too short
+	•	Low = overly verbose or too brief
+
+
+
+3. Confidence
+	•	3 = High Confidence “I’m very sure this is correct”
+	◦	clear winner
+	◦	obvious trade-offs
+	◦	low ambiguity
+	•	2 = Medium Confidence “I think this is right, but not certain”
+	◦	some trade-offs
+	◦	close between responses
+	•	1 = Low Confidence “This was genuinely difficult”
+	◦	strong trade-offs
+	◦	multiple valid answers
+	◦	unclear best choice
+
+
+
+4. Error Taxonomy
+Use 1–2 error types per response, prioritizing the primary failure over secondary effects.
+
+Factual Error
+Factually incorrect information (always wrong). Includes false necessity/impossibility claims. Test: Is this EVER true? If not → false claim.
+
+Overgeneralization
+Applies something that is sometimes true as if it is always true. Scope error (e.g., “always”, “must”, “best”).
+
+Misleading Causal Claim
+Presents a cause-and-effect relationship (X → Y) that is incorrect, overstated, or not supported by evidence. Often occurs alongside overgeneralization.
+
+Incomplete Answer
+Correct, but fails to address key aspects of the question.
+
+Lack of Guidance
+Too vague or non-actionable to be useful, even if factually correct.
+
+
+
+5. Learning Signals
+Definition
+A learning signal captures the primary failure pattern in the comparison and expresses it as a general, reusable rule.
+
+Guidelines
+	•	Focus on one primary insight
+	•	Avoid generic quality statements
+	•	Avoid multiple ideas in one signal
+	•	Do not rely on domain-specific wording
+	•	Convert the error type into a general rule
+
+Signal Structure
+Prefer responses that [DO X] rather than [DO Y]
+
+Example
+	•	Weak: “Prefer detailed and correct responses”
+	•	Strong: “Prefer responses that distinguish between short-term mechanisms and long-term outcomes”
+
+
+
+Summary
+This rubric was refined through iterative evaluation, addressing:
+	•	confusion between weak vs misleading responses
+	•	handling of myths and causal reasoning
+	•	clarity and precision of error classification
+	•	specificity and usefulness of learning signals

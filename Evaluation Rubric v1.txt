@@ -1,0 +1,104 @@
+Response Evaluation Rubric (V1)
+
+
+
+1. Evaluation Principles
+	1	Correctness takes priority Responses that contain incorrect or misleading information should not be preferred, even if they are clear or well-written.
+
+	2	Use comparative reasoning Justifications must explain the ranking by comparing responses, not evaluating them in isolation.
+
+	3	Reference rubric criteria explicitly Each justification should reference at least two criteria (e.g., correctness, helpfulness, clarity, conciseness).
+
+	4	Avoid personal preference bias Evaluations should be based on usefulness to a general user, not personal writing style or subjective preference.
+
+	5	Prioritize user usefulness Select the response that would be most helpful to a typical user, even if it is not the most concise or stylistically polished.
+
+	6	Handle trade-offs explicitly When responses have strengths in different areas (e.g., clarity vs completeness), explicitly identify and weigh these trade-offs in the justification.
+
+	7	Conciseness is a secondary criterion Conciseness should only influence decisions when correctness and helpfulness are comparable.
+
+
+
+2. Evaluation Criteria
+
+1. Correctness (takes priority)
+Definition: Is the information factually accurate and free from misleading or incorrect claims?
+Guide:
+	•	High = accurate, no misleading info
+	•	Medium = mostly correct, minor issues
+	•	Low = incorrect or misleading
+
+2. Helpfulness
+Definition: Does the response directly and effectively answer the user’s question?
+Guide:
+	•	High = clear, actionable, fully answers
+	•	Medium = partially helpful or incomplete
+	•	Low = vague, off-topic, or unhelpful
+
+3. Clarity
+Definition: Is the response easy to understand and well-structured?
+Guide:
+	•	High = clear, well-organized
+	•	Medium = understandable but slightly messy
+	•	Low = confusing or poorly structured
+
+4. Conciseness
+Definition: Is the response appropriately detailed without unnecessary length?
+Guide:
+	•	High = efficient, no fluff
+	•	Medium = slightly too long/short
+	•	Low = overly verbose or too brief
+
+
+
+3. Confidence
+	•	3 = High Confidence “I’m very sure this is correct”
+	◦	clear winner
+	◦	obvious trade-offs
+	◦	low ambiguity
+	•	2 = Medium Confidence “I think this is right, but not certain”
+	◦	some trade-offs
+	◦	close between two responses
+	•	1 = Low Confidence “This was genuinely difficult”
+	◦	strong trade-offs
+	◦	multiple valid answers
+	◦	unclear best choice
+
+
+
+4. Error Taxonomy
+
+Common Error Types:
+
+Factual error
+ → Incorrect or misleading information
+
+Overgeneralization
+ → Advice that is too broad or extreme (e.g., “cut carbs completely”)
+
+Lack of specificity
+ → Too vague to be useful
+
+Incomplete answer
+ → Misses key aspects of the question
+
+Overconfidence
+ → Sounds certain despite being wrong or weak
+
+Verbosity
+ → Unnecessarily long without adding value
+
+Clarity issue
+ → Difficult to understand or poorly structured
+
+Off-topic / irrelevant
+ → Does not directly address the question
+
+
+
+5. Learning Signals
+
+Learning signal: A brief statement describing what the model should learn from this comparison (i.e., which qualities to prefer or avoid in future responses). Should be more general than the Justification.
+
+Example:
+Prefer responses that explain underlying principles clearly over those that give oversimplified or extreme advice

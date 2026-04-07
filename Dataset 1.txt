@@ -1,0 +1,541 @@
+LLM Evaluation Dataset 1
+Focus: Fitness domain (baseline evaluation)
+
+
+Task 1
+Prompt:
+What is the best way to build muscle?
+
+Response A:
+Building muscle primarily requires progressive overload, meaning you gradually increase the weight or resistance in your training over time. You should also ensure you’re eating enough protein and calories to support muscle growth, and getting sufficient rest for recovery.
+
+Response B:
+The best way to build muscle is to train hard and stay consistent. Focus on lifting weights regularly, eat well, and make sure you’re pushing yourself each session.
+
+Response C:
+To build muscle quickly, you should train every day and push your muscles to failure in every workout. The more you train, the faster your muscles will grow.
+
+Best: A
+Ranking: A > B > C
+Confidence: 3
+
+Justification:
+A is the best because it is correct and helpful. It is more actionable and clear than B. C is incorrect
+
+Error type:
+Factual Error and overgeneralization
+
+Learning signal:
+Prefer responses that provide specific details over general guidelines.
+
+
+Task 2
+Prompt:
+How many days a week should I work out?
+
+Response A:
+Most people benefit from working out around 3–5 days per week, depending on their goals and fitness level. This allows enough stimulus for progress while still giving the body time to recover between sessions.
+
+Response B:
+You should work out every day if you want the best results. Training more frequently will always lead to faster progress, as long as you stay consistent.
+
+Response C:
+It depends on your schedule, but you can work out whenever you have time. Even once or twice a week is fine if that’s what works for you.
+
+Best: A
+Ranking: A > C > B
+Confidence: 3
+
+Justification:
+A is the best because it mentions that it depends on your goals and gives an accurate range of days. C is not incorrect, but uses vague terms like "is fine" and "whenever". B is misleading and would lead to dangerous overtraining.
+
+Error type:
+Overgeneralization and Overconfidence
+
+Learning signal:
+Prefer responses that address ambiguity in the prompt and avoid responses that are vague and overgeneralized.
+
+
+Task 3
+Prompt:
+Is cardio or weight training better for fat loss?
+
+Response A:
+Both cardio and weight training can help with fat loss, but the key factor is maintaining a calorie deficit. Weight training helps preserve muscle mass, while cardio can help increase calorie expenditure, so a combination of both is generally most effective.
+
+Response B:
+Cardio is better for fat loss because it burns more calories during the workout. If your goal is to lose fat, you should focus primarily on cardio exercises like running or cycling.
+
+Response C:
+Weight training is better for fat loss because muscle burns more calories than fat. The more muscle you build, the more fat you will lose, so lifting weights is the best approach.
+
+Best: A
+Ranking: A > B > C
+Confidence: 2
+
+Justification:
+A is the most accurate because it addresses a critical idea: calorie deficit is more important than the method of training, because both methods will work. B is better than C because C is more misleading (more muscle does not mean less fat).
+
+Error type:
+Overgeneralization and factual error (misleading)
+
+Learning signal:
+Prefer responses that identify and address the key idea behind the prompt (e.g. fat loss is the real goal).
+
+
+Task 4
+Prompt:
+Should I eat before or after a workout?
+
+Response A:
+It depends on your goals and timing. Eating before a workout can provide energy and improve performance, especially if it’s been a while since your last meal. Eating after a workout helps with recovery by replenishing glycogen stores and supporting muscle repair, so both can be beneficial.
+
+Response B:
+You should always eat after a workout, not before. Eating beforehand can make you feel sluggish, while eating after ensures your body recovers properly.
+
+Response C:
+It doesn’t really matter whether you eat before or after a workout, as long as you eat something at some point during the day.
+
+Best: A
+Ranking: A > B > C
+Confidence: 3
+
+Justification:
+A addresses the nuance of eating before and after and provides a detailed and accurate explanation of each side. B is not incorrect, but misses the nuance of both sides. C is unhelpful and misleading, not providing any useful guidance to the user.
+
+Error type:
+C is incomplete, misses the key aspect of the question. C is also overgeneralized.
+
+Learning signal:
+Prefer responses that identify and address nuance then provide detailed explanations that are helpful and accurate.
+
+
+Task 5
+Prompt:
+How much protein do I need per day to build muscle?
+
+Response A:
+Most people aiming to build muscle should consume around 1.6–2.2 grams of protein per kilogram of body weight per day. This range is supported by research and helps maximize muscle growth when combined with resistance training.
+
+Response B:
+You should eat as much protein as possible if you want to build muscle. The more protein you consume, the more muscle you will gain.
+
+Response C:
+A good rule of thumb is to aim for about 0.8 grams of protein per kilogram of body weight per day, which is the general recommended daily intake for adults.
+
+Best: A
+Ranking: A > B > C
+Confidence: 3
+
+Justification:
+A provides the most correct range of protein intake and provides additional, relevant information that will help the user. B is overgeneralised and lacks specificity but is more helpful and correct than C, which is factually wrong.
+
+Error type:
+C: Factual Error
+
+Learning signal:
+Prefer responses that provide specific, verifiable information that is helpful to the user over responses that lack specificity or have missed key aspects of the questions and provide irrelevant (albeit factual) evidence.
+
+Task 6
+Prompt:
+Is it better to do fasted cardio for fat loss?
+
+Response A:
+Fasted cardio can increase fat oxidation during the workout, but this does not necessarily lead to greater fat loss over time. Overall fat loss is determined by total calorie balance, so fasted cardio is not inherently better than fed cardio.
+
+Response B:
+Fasted cardio is better for fat loss because your body burns more fat when you exercise without eating first. This makes it the most effective way to lose fat.
+
+Response C:
+You can do fasted cardio if you prefer it, but it doesn’t make a significant difference for fat loss compared to doing cardio after eating. The most important factor is maintaining a consistent calorie deficit over time.
+
+Best: A
+Ranking: A > C > B
+Confidence: 2
+
+Justification:
+A provides the most factually correct information (fat burn is higher when fasted, but long term results depend on calorie intake). Although C may be misleading in stating that there is no significant difference, it does address the nuance in that personal preference is important and that calorie intake over the long run is more important. B is correct but gives an unnecessary absolute answer and is thus less helpful to the user.
+
+Error type:
+B: Overgeneralized
+
+Learning signal:
+Prefer responses that provide specific, factual information and context without misleading or over generalizing.
+
+
+Task 7
+Prompt:
+Do I need supplements to build muscle?
+
+Response A:
+No, supplements are not necessary to build muscle. As long as you are meeting your calorie and protein needs through whole foods and following a proper training program, you can build muscle effectively without them.
+
+Response B:
+Supplements are essential for building muscle. Without protein powders, creatine, and other supplements, it is very difficult to make progress.
+
+Response C:
+Supplements can help support muscle growth, but they are not required. Some, like protein powder or creatine, may be convenient or beneficial, but they should not replace a solid diet and training routine
+
+Best: C
+Ranking: C > A > B
+Confidence: 2
+
+Justification:
+Both A and C are factually correct, but C provides additional context (supplements can support growth and are convenient). B is factually incorrect, supplements are not essential.
+
+Error type:
+B: Factual Error and misleading
+
+Learning signal:
+Prefer responses that are factually correct and provide additional context that is helpful to the user's understanding.
+
+
+Task 8
+Prompt:
+Should I do cardio before or after lifting weights?
+
+Response A:
+It depends on your primary goal. If your main goal is strength or muscle gain, it’s generally better to lift weights first so you can train with maximum energy. If your goal is cardiovascular fitness, doing cardio first may make more sense.
+
+Response B:
+You should always do cardio after lifting weights. Doing cardio first will reduce your strength and make your workout less effective.
+
+Response C:
+The order of cardio and weight training doesn’t matter much, so you can do whichever you prefer based on convenience.
+
+Best: A
+Ranking: A > B > C
+Confidence: 3
+
+Justification:
+A is factually correct and highlights the trade off: it ultimately depends on your goals. B is misleading and making false claims, while C is factually incorrect.
+
+Error type:
+C: Factual Error - misleading information
+
+Learning signal:
+Prefer responses that are not misleading or making false claims and that address trade offs decisions when guiding decision-making.
+
+
+Task 9
+Prompt:
+Do I need to eat immediately after a workout to build muscle?
+
+Response A:
+You don’t need to eat immediately after a workout, but consuming protein within a few hours can support muscle recovery and growth. The idea of a strict “anabolic window” is somewhat overstated, as total daily protein intake is more important.
+
+Response B:
+Yes, you need to eat right after your workout to build muscle. If you don’t eat within 30 minutes, your body will miss the opportunity to grow.
+
+Response C:
+It’s best to eat something after your workout, but the exact timing isn’t critical. As long as you’re getting enough protein throughout the day, your muscles will still grow.
+
+Best: A
+Ranking: A > C > B
+Confidence: 3
+
+Justification:
+A and C address the nuance which is that it is best to eat relatively soon after a workout, but it is not more important than daily intake. However, A provides more specific details on the timing window and also mentions a common misconception which is relevant to the prompt. C is overconfident and making misleading claims in the 2nd sentence - you will not miss the opportunity to grow if you don't eat within 30 minutes, it is best but not essential for growth.
+
+Error type:
+B: Misleading claims (worse because it supports a common misconception)
+
+Learning signal:
+Prefer responses that provide actionable guidelines with specific details while also addressing any common misconceptions related to the prompt.
+
+
+Task 10
+Prompt:
+Can I build muscle while losing fat at the same time?
+
+Response A:
+Yes, it is possible to build muscle while losing fat, especially for beginners or those returning after a break. This is often referred to as body recomposition and typically requires a combination of resistance training, adequate protein intake, and a slight calorie deficit.
+
+Response B:
+No, you cannot build muscle while losing fat. Muscle gain requires a calorie surplus, while fat loss requires a deficit, so the two processes cannot happen at the same time.
+
+Response C:
+It is very difficult to build muscle while losing fat, but not impossible. Most people will see better results by focusing on one goal at a time, either gaining muscle or losing fat.
+
+Best: A
+Ranking: A > C > B
+Confidence: 3
+
+Justification:
+A provides the most context (easiest for newcomers and those returning) while also providing helpful, specific advice. C is factual but lacks the detail and nuance of A. In denying that fat loss and muscle gain can occur simultaneously, B makes a factually wrong statement.
+
+Error type:
+B: False Claim
+
+Learning signal:
+Prefer responses that provide additional context that is helpful and specific without making false claims.
+
+
+Task 11
+Prompt:
+Do I need to train to failure to build muscle?
+
+Response A:
+Training to failure can be effective for muscle growth, but it’s not required. You can still build muscle by training close to failure while maintaining good form and managing fatigue.
+
+Response B:
+You must train to failure on every set to build muscle. If you stop before failure, your muscles won’t grow effectively.
+
+Response C:
+Training to failure is one way to build muscle, but many people get good results without doing it regularly. Consistency, volume, and progressive overload are more important overall.
+
+Best: A
+Ranking: A > C > B
+Confidence: 2
+
+Justification:
+A and C are both correct in stating that training to failure is not necessary for muscle growth and provide alternatives, however A stays on topic, referencing that training close to failure is effective. B is hyperbolic and misleading, muscle can be built without training to failure.
+
+Error type:
+B: Misleading Claim
+
+Learning signal:
+Prefer responses that are factual and expand with relevant information that is clearly related and concise.
+
+
+Task 12
+Prompt:
+Is soreness after a workout a good indicator of muscle growth?
+
+Response A:
+Muscle soreness can occur after a workout, especially when trying new exercises, but it is not a reliable indicator of muscle growth. You can build muscle without feeling sore.
+
+Response B:
+Yes, soreness means your muscles are growing. If you’re not sore after a workout, it means your workout wasn’t effective.
+
+Response C:
+Soreness can be a sign that your muscles were challenged, but it doesn’t necessarily mean growth is happening. Other factors like progressive overload are more important.
+
+Best: C
+Ranking: C > A > B
+Confidence: 3
+
+Justification:
+C and A are both correct in that soreness is not a reliable indicator for growth, however C is more clear in stating that it is a sign muscles were challenged. B is misleading, while muscle soreness is a sign that your workout may have been effective, it is not an indicator of growth.
+
+Error type:
+B: Misleading claim, incomplete information
+
+Learning signal:
+Prefer responses that provide relevant examples that are helpful in understanding as opposed to responses that are misleading or incomplete.
+
+
+Task 13
+Prompt:
+Should I lift heavy weights or light weights for muscle growth?
+
+Response A:
+Both heavy and light weights can build muscle, as long as you train with sufficient effort. Heavier weights typically build strength more efficiently, while lighter weights can still stimulate growth if taken close to failure.
+
+Response B:
+You should always lift heavy weights for muscle growth. Light weights are not effective for building muscle.
+
+Response C:
+Light weights are better for muscle growth because they allow you to do more repetitions and feel the burn more.
+
+Best: A
+Ranking: A > C > B
+Confidence: 3
+
+Justification:
+A correctly states that both weights are effective for muscle growth and provides nuanced explanations on both sides. C incorrectly states that light weights are "better" but does not rule out heavy weights as having potential. B completely invalidates light weights which is factually incorrect and misleading.
+
+Error type:
+B: Factual Error
+
+Learning signal:
+Prefer responses that correctly acknowledge and explain factual nuance.
+
+
+Task 14
+Prompt:
+Do I need to follow a strict diet to lose fat?
+
+Response A:
+You don’t need an extremely strict diet, but you do need to maintain a calorie deficit. Consistency and overall calorie intake matter more than strict rules.
+
+Response B:
+Yes, you need to follow a very strict diet and cut out all unhealthy foods completely to lose fat.
+
+Response C:
+You can lose fat without following a strict diet, as long as you try to eat healthier foods and stay active.
+
+Best: A
+Ranking: A > C > B
+Confidence: 3
+
+Justification:
+A correctly explains that deficit and consistency are more important than strict rules, whereas C is less helpful and somewhat misleading. B falsely claims that you cannot eat unhealthy food and still lose fat.
+
+Error type:
+B: False Claim
+
+Learning signal:
+Prefer responses that highlight key concepts in a topic without providing misleading or incomplete information.
+
+
+Task 15
+Prompt:
+How important is sleep for muscle growth?
+
+Response A:
+Sleep is very important for muscle growth, as it supports recovery, hormone regulation, and overall performance. Poor sleep can negatively impact progress.
+
+Response B:
+Sleep is not that important for muscle growth. As long as you train hard and eat enough protein, you will still build muscle.
+
+Response C:
+Sleep plays a role in recovery, but you can still make progress even if your sleep isn’t perfect.
+
+Best: A
+Ranking: A > C > B
+Confidence: 3
+
+Justification:
+A correctly states the importance of sleep for muscle growth and recovery while C somewhat undermines the importance of sleep. B incorrectly states that sleep is not important.
+
+Error type:
+B: Misleading claim
+
+Learning signal:
+Prefer responses that correctly identify the most important factors around a topic and do not downplay or mislead their relevance.
+
+
+Task 16
+Prompt:
+Should I do the same workout every week?
+
+Response A:
+You can repeat the same workout structure, but you should aim to progressively increase difficulty over time, such as by adding weight, reps, or improving technique.
+
+Response B:
+You should change your workout every week to keep your muscles guessing, otherwise they will stop growing.
+
+Response C:
+Doing the same workout every week is fine, as long as you are consistent.
+
+Best: A
+Ranking: A > C > B
+Confidence: 3
+
+Justification:
+A correctly states that you should increase difficulty over time. B is more correct than C in that it suggests variation, however its reasoning is wrong. C is misleading, consistently doing the same workout will not lead to improvements.
+
+Error type:
+B: False claim and overgeneralization
+
+Learning signal:
+Prefer responses that correctly identify nuance and provide helpful examples over those that give oversimplified or false information.
+
+
+Task 17
+Prompt:
+Is lifting weights dangerous?
+
+Response A:
+Lifting weights is generally safe when performed with proper technique and appropriate loads. Injuries can occur, but risk is low when training is done correctly.
+
+Response B:
+Lifting weights is dangerous because it can easily lead to injuries, especially if you are not experienced.
+
+Response C:
+Lifting weights can be dangerous if done incorrectly, but it can also be safe if proper form and precautions are followed.
+
+Best: A
+Ranking: A > C > B
+Confidence: 3
+
+Justification:
+A correctly states that weight lifting is generally safe and provides relevant guidance. C provides the same sentiment but is less detailed. B overstates the risk involved.
+
+Error type:
+B: Extreme
+
+Learning signal:
+Prefer responses that do not exaggerate facts and provide helpful examples and additional information.
+
+
+Task 18
+Prompt:
+Do I need to eat carbs to build muscle?
+
+Response A:
+Carbohydrates are not strictly required to build muscle, but they can support training performance and recovery. Protein intake and overall calories are more critical.
+
+Response B:
+You must eat carbohydrates to build muscle. Without carbs, your muscles will not grow.
+
+Response C:
+Carbs are useful for energy, but you can still build muscle without them if your overall nutrition is sufficient.
+
+Best: A
+Ranking: A > C > B
+Confidence: 3
+
+Justification:
+A correctly identifies the nuance that carbs are not essential but can be helpful and provides guidance. C notes this but lacks detail. B falsely claims that carbs are necessary.
+
+Error type:
+B: Overgeneralized
+
+Learning signal:
+Prefer responses that are detailed and nuanced over those that are vague, incomplete, or misleading.
+
+
+Task 19
+Prompt:
+Is it better to work out in the morning or evening?
+
+Response A:
+The best time to work out depends on your schedule and when you feel most energetic. Consistency is more important than the specific time of day.
+
+Response B:
+Working out in the morning is always better because your metabolism is higher and you will burn more calories.
+
+Response C:
+Evening workouts can be better for performance for some people, but the most important factor is choosing a time you can stick to consistently.
+
+Best: C
+Ranking: C > A > B
+Confidence: 3
+
+Justification:
+C correctly states that performance can be better in the evening and emphasizes consistency. A mentions consistency but lacks this detail. B incorrectly states that morning is always better.
+
+Error type:
+B: Misleading and verbose
+
+Learning signal:
+Prefer responses that correctly identify relevant facts and themes while also giving practical guidance.
+
+
+Task 20
+Prompt:
+Do I need to do cardio to lose fat?
+
+Response A:
+Cardio is not required for fat loss, but it can help increase calorie expenditure. Fat loss ultimately depends on maintaining a calorie deficit.
+
+Response B:
+You must do cardio to lose fat. Without cardio, it is not possible to burn enough calories to lose fat.
+
+Response C:
+Cardio can help with fat loss, but diet plays a bigger role. You can lose fat without cardio if you manage your calorie intake.
+
+Best: A
+Ranking: A > C > B
+Confidence: 3
+
+Justification:
+A correctly answers the question and adds helpful context about fat loss. C is correct but less complete. B incorrectly states that cardio is required.
+
+Error type:
+B: Factual Error
+
+Learning signal:
+Prefer responses that provide detailed, correct answers while also connecting implicit themes in the explanation.
